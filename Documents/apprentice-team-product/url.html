@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Add</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="inner">
+            <h1><a href="#">HOME</a></h1>
+            <span>/</span>
+            <h1><a href="#">InsertURL</a></h1>
+        </div>        
+    </header>
+
+    <main class="main-content">
+        <div class="inner">
+            <section class="welcome-section">
+                <h1>リンクの追加</h1>
+                <!-- url入力フォームの追加 -->
+                <h2>Github</h2>
+                <form action="/submit-url" method="post">
+                    <label for="url">URLを入力してください:</label><br>
+                    <input type="url" id="url" name="url" required><br>
+                    <input type="submit" value="更新">
+                </form>
+                <h2>Quiita</h2>
+                <form action="/submit-url" method="post">
+                    <label for="url">URLを入力してください:</label><br>
+                    <input type="url" id="url" name="url" required><br>
+                    <input type="submit" value="追加">
+                </form>
+                <h2>Zenn</h2>
+                <form action="/submit-url" method="post">
+                    <label for="url">URLを入力してください:</label><br>
+                    <input type="url" id="url" name="url" required><br>
+                    <input type="submit" value="追加">
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="inner">
+            <p>&copy; チーム5</p>
+        </div>
+    </footer>
+
+    <script src=""></script>
+</body>
+</html>
