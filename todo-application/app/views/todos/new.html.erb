@@ -1,0 +1,8 @@
+<div class="container">
+  <h1>タスクの追加</h1>
+
+  <%= form_with(model: Todo.new, local: true) do |form| %>
+    <%= form.text_field :title, placeholder: "タスクを入力する" %>
+    <%= form.submit "保存する" %>
+  <% end %>
+</div>
