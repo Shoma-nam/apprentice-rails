@@ -5,6 +5,11 @@ class TodosController < ApplicationController
     @todos = Todo.all
   end
 
+  def new
+    @todo = Todo.new
+  end
+  
+
   def create
     @todo = Todo.new(todo_params)
     if @todo.save
@@ -33,9 +38,6 @@ class TodosController < ApplicationController
     redirect_to todos_path, notice: 'タスクが削除されました。'
   end
 
-  def show
-    @todo = Todo.find(params[:id])
-  end
   private
 
   def todo_params
